@@ -1,0 +1,115 @@
+{
+  "configVersion": 1,
+  "timestamp": 1780670303467,
+  "index": "C:/Program Files/Git/educa-neuro/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "C:/Program Files/Git/educa-neuro/chunk-2OIYFM2C.js",
+        "C:/Program Files/Git/educa-neuro/chunk-2WLHSAT3.js",
+        "C:/Program Files/Git/educa-neuro/chunk-6LQGRRWN.js",
+        "C:/Program Files/Git/educa-neuro/chunk-DFG3SDDK.js",
+        "C:/Program Files/Git/educa-neuro/chunk-H424QOT2.js",
+        "C:/Program Files/Git/educa-neuro/chunk-J3AIJSBF.js",
+        "C:/Program Files/Git/educa-neuro/chunk-QJDEBSRO.js",
+        "C:/Program Files/Git/educa-neuro/chunk-XWPXRECE.js",
+        "C:/Program Files/Git/educa-neuro/favicon.ico",
+        "C:/Program Files/Git/educa-neuro/index.html",
+        "C:/Program Files/Git/educa-neuro/main-HE5HYT4F.js",
+        "C:/Program Files/Git/educa-neuro/manifest.webmanifest",
+        "C:/Program Files/Git/educa-neuro/styles-A24PVHJV.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "C:/Program Files/Git/educa-neuro/assets/images/cursos.png",
+        "C:/Program Files/Git/educa-neuro/assets/images/educa-autismo.png",
+        "C:/Program Files/Git/educa-neuro/assets/images/educa-neuro-loader.png",
+        "C:/Program Files/Git/educa-neuro/assets/images/educa-neuro.png",
+        "C:/Program Files/Git/educa-neuro/assets/images/home/aprende_atu_ritmo.png",
+        "C:/Program Files/Git/educa-neuro/assets/images/home/contexto_reales.png",
+        "C:/Program Files/Git/educa-neuro/assets/images/home/enfoque_neuroafirmativo.png",
+        "C:/Program Files/Git/educa-neuro/assets/images/home/evidencia_experiencia.png",
+        "C:/Program Files/Git/educa-neuro/assets/images/recursos.png",
+        "C:/Program Files/Git/educa-neuro/assets/images/tienda.png",
+        "C:/Program Files/Git/educa-neuro/assets/images/webinar.png",
+        "C:/Program Files/Git/educa-neuro/icons/icon-128x128.png",
+        "C:/Program Files/Git/educa-neuro/icons/icon-144x144.png",
+        "C:/Program Files/Git/educa-neuro/icons/icon-152x152.png",
+        "C:/Program Files/Git/educa-neuro/icons/icon-192x192.png",
+        "C:/Program Files/Git/educa-neuro/icons/icon-384x384.png",
+        "C:/Program Files/Git/educa-neuro/icons/icon-512x512.png",
+        "C:/Program Files/Git/educa-neuro/icons/icon-72x72.png",
+        "C:/Program Files/Git/educa-neuro/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "C:/Program Files/Git/educa-neuro/assets/images/cursos.png": "7c05aed8c13cb43318d2f8c40f26b01ecd3713a3",
+    "C:/Program Files/Git/educa-neuro/assets/images/educa-autismo.png": "b02e590bb85c011ffc1aca8faa73d2586c17a13c",
+    "C:/Program Files/Git/educa-neuro/assets/images/educa-neuro-loader.png": "861904b0260c8295d27059b30be4c5c379324a9b",
+    "C:/Program Files/Git/educa-neuro/assets/images/educa-neuro.png": "9e475f1f7fb79dce7714f69537dff70f9249be26",
+    "C:/Program Files/Git/educa-neuro/assets/images/home/aprende_atu_ritmo.png": "6f48d1118a7c0d640e5a5794ba37adebc3b8ddb0",
+    "C:/Program Files/Git/educa-neuro/assets/images/home/contexto_reales.png": "3f8c20186815ee22cebba1028bf0b877e00f3981",
+    "C:/Program Files/Git/educa-neuro/assets/images/home/enfoque_neuroafirmativo.png": "143f82d297e373e81499f96d227f569802ecb147",
+    "C:/Program Files/Git/educa-neuro/assets/images/home/evidencia_experiencia.png": "cdcd3aa7588f14da40c6808c8de0dbbbaa81c769",
+    "C:/Program Files/Git/educa-neuro/assets/images/recursos.png": "235b81646a610eda3196991f70d20c1c9bfbe0de",
+    "C:/Program Files/Git/educa-neuro/assets/images/tienda.png": "2f67a27c4fe1bed04323969ee1a178660c41bca1",
+    "C:/Program Files/Git/educa-neuro/assets/images/webinar.png": "25018ac18042486332af0b28b8cac1cd23c02344",
+    "C:/Program Files/Git/educa-neuro/chunk-2OIYFM2C.js": "80984f69a57dfb236085545a772a4adf1a078012",
+    "C:/Program Files/Git/educa-neuro/chunk-2WLHSAT3.js": "ddaa42ffff11f58ca78af24486e93677f5e9557b",
+    "C:/Program Files/Git/educa-neuro/chunk-6LQGRRWN.js": "03a36da1138909473f2448c9db93ed3a40205549",
+    "C:/Program Files/Git/educa-neuro/chunk-DFG3SDDK.js": "dc01bf490385dbf1ad24afbea0c4c16c278f932e",
+    "C:/Program Files/Git/educa-neuro/chunk-H424QOT2.js": "8a2964c1cbf8135d95c7641c0febfea8a4b3cf9c",
+    "C:/Program Files/Git/educa-neuro/chunk-J3AIJSBF.js": "4d9e63788d894ac42b6269c5fd0858253f3fd0db",
+    "C:/Program Files/Git/educa-neuro/chunk-QJDEBSRO.js": "5885bf7dacc62d408c3a88ddeaf8913eb389e007",
+    "C:/Program Files/Git/educa-neuro/chunk-XWPXRECE.js": "5db375998e896a0f117e06d68c086d426c497936",
+    "C:/Program Files/Git/educa-neuro/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "C:/Program Files/Git/educa-neuro/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
+    "C:/Program Files/Git/educa-neuro/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
+    "C:/Program Files/Git/educa-neuro/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
+    "C:/Program Files/Git/educa-neuro/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
+    "C:/Program Files/Git/educa-neuro/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
+    "C:/Program Files/Git/educa-neuro/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
+    "C:/Program Files/Git/educa-neuro/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
+    "C:/Program Files/Git/educa-neuro/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
+    "C:/Program Files/Git/educa-neuro/index.html": "a557c25a1f7317b5961bcc7444a65e56f8ad3007",
+    "C:/Program Files/Git/educa-neuro/main-HE5HYT4F.js": "d555d0e7f92975339378e47c516ba42317966d3c",
+    "C:/Program Files/Git/educa-neuro/manifest.webmanifest": "0b29111918258f1b678677be8fc1f3d1740cf324",
+    "C:/Program Files/Git/educa-neuro/styles-A24PVHJV.css": "26bc8e28b2523d4185d150163c197fc01e415b74"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
