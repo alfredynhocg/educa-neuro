@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1780670303467,
+  "timestamp": 1780670420094,
   "index": "C:/Program Files/Git/educa-neuro/index.html",
   "assetGroups": [
     {
@@ -88,7 +88,7 @@
     "C:/Program Files/Git/educa-neuro/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
     "C:/Program Files/Git/educa-neuro/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
     "C:/Program Files/Git/educa-neuro/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
-    "C:/Program Files/Git/educa-neuro/index.html": "a557c25a1f7317b5961bcc7444a65e56f8ad3007",
+    "C:/Program Files/Git/educa-neuro/index.html": "67d1ab51c26f5ff7f69de493037b364cdd20e005",
     "C:/Program Files/Git/educa-neuro/main-HE5HYT4F.js": "d555d0e7f92975339378e47c516ba42317966d3c",
     "C:/Program Files/Git/educa-neuro/manifest.webmanifest": "0b29111918258f1b678677be8fc1f3d1740cf324",
     "C:/Program Files/Git/educa-neuro/styles-A24PVHJV.css": "26bc8e28b2523d4185d150163c197fc01e415b74"
