@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1780670657866,
+  "timestamp": 1781301530232,
   "index": "/educa-neuro/index.html",
   "assetGroups": [
     {
@@ -11,19 +11,18 @@
         "ignoreVary": true
       },
       "urls": [
-        "/educa-neuro/chunk-2OIYFM2C.js",
-        "/educa-neuro/chunk-2WLHSAT3.js",
-        "/educa-neuro/chunk-6LQGRRWN.js",
-        "/educa-neuro/chunk-DFG3SDDK.js",
-        "/educa-neuro/chunk-H424QOT2.js",
-        "/educa-neuro/chunk-J3AIJSBF.js",
-        "/educa-neuro/chunk-QJDEBSRO.js",
-        "/educa-neuro/chunk-XWPXRECE.js",
+        "/educa-neuro/chunk-G4Z2I2NY.js",
+        "/educa-neuro/chunk-KSTXRN3N.js",
+        "/educa-neuro/chunk-KZEUWQDQ.js",
+        "/educa-neuro/chunk-PNDJ6OAS.js",
+        "/educa-neuro/chunk-QAEX6ARA.js",
+        "/educa-neuro/chunk-SASPYCYO.js",
+        "/educa-neuro/chunk-Z637ZEA7.js",
         "/educa-neuro/favicon.ico",
         "/educa-neuro/index.html",
-        "/educa-neuro/main-HE5HYT4F.js",
+        "/educa-neuro/main-WXOS7FJ2.js",
         "/educa-neuro/manifest.webmanifest",
-        "/educa-neuro/styles-A24PVHJV.css"
+        "/educa-neuro/styles-ZDLIMSRY.css"
       ],
       "patterns": []
     },
@@ -35,6 +34,8 @@
         "ignoreVary": true
       },
       "urls": [
+        "/educa-neuro/assets/favicon.svg",
+        "/educa-neuro/assets/images/anne.jpg",
         "/educa-neuro/assets/images/cursos.png",
         "/educa-neuro/assets/images/educa-autismo.png",
         "/educa-neuro/assets/images/educa-neuro-loader.png",
@@ -60,6 +61,8 @@
   ],
   "dataGroups": [],
   "hashTable": {
+    "/educa-neuro/assets/favicon.svg": "a152c53e86f3cf19f2c714630a0400df580f8e77",
+    "/educa-neuro/assets/images/anne.jpg": "6a57268668425fea04e30ad62e4ada0903f12195",
     "/educa-neuro/assets/images/cursos.png": "7c05aed8c13cb43318d2f8c40f26b01ecd3713a3",
     "/educa-neuro/assets/images/educa-autismo.png": "b02e590bb85c011ffc1aca8faa73d2586c17a13c",
     "/educa-neuro/assets/images/educa-neuro-loader.png": "861904b0260c8295d27059b30be4c5c379324a9b",
@@ -71,14 +74,13 @@
     "/educa-neuro/assets/images/recursos.png": "235b81646a610eda3196991f70d20c1c9bfbe0de",
     "/educa-neuro/assets/images/tienda.png": "2f67a27c4fe1bed04323969ee1a178660c41bca1",
     "/educa-neuro/assets/images/webinar.png": "25018ac18042486332af0b28b8cac1cd23c02344",
-    "/educa-neuro/chunk-2OIYFM2C.js": "80984f69a57dfb236085545a772a4adf1a078012",
-    "/educa-neuro/chunk-2WLHSAT3.js": "ddaa42ffff11f58ca78af24486e93677f5e9557b",
-    "/educa-neuro/chunk-6LQGRRWN.js": "03a36da1138909473f2448c9db93ed3a40205549",
-    "/educa-neuro/chunk-DFG3SDDK.js": "dc01bf490385dbf1ad24afbea0c4c16c278f932e",
-    "/educa-neuro/chunk-H424QOT2.js": "8a2964c1cbf8135d95c7641c0febfea8a4b3cf9c",
-    "/educa-neuro/chunk-J3AIJSBF.js": "4d9e63788d894ac42b6269c5fd0858253f3fd0db",
-    "/educa-neuro/chunk-QJDEBSRO.js": "5885bf7dacc62d408c3a88ddeaf8913eb389e007",
-    "/educa-neuro/chunk-XWPXRECE.js": "5db375998e896a0f117e06d68c086d426c497936",
+    "/educa-neuro/chunk-G4Z2I2NY.js": "b072260a77ac1fa1a8c5747c5ebd40b19a88186a",
+    "/educa-neuro/chunk-KSTXRN3N.js": "dda918adb6815e9cf18307f32609191a0296e073",
+    "/educa-neuro/chunk-KZEUWQDQ.js": "10a48085999d8e7d024c84b13c7b59b0395b221f",
+    "/educa-neuro/chunk-PNDJ6OAS.js": "6dfb31dd2616cdbaa0db238f7d69cc88d30ff29c",
+    "/educa-neuro/chunk-QAEX6ARA.js": "92a018d60668f03af5a2af397f55a6dffa283b9c",
+    "/educa-neuro/chunk-SASPYCYO.js": "4a244fe19a3862e0a89db0190f8135e3ab8ee312",
+    "/educa-neuro/chunk-Z637ZEA7.js": "edc4cb2452975d8bca883e982ae5111f623d6798",
     "/educa-neuro/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
     "/educa-neuro/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
     "/educa-neuro/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
@@ -88,10 +90,10 @@
     "/educa-neuro/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
     "/educa-neuro/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
     "/educa-neuro/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
-    "/educa-neuro/index.html": "4ad6fdf43f774dd997a3c5896378c29a8acd01b9",
-    "/educa-neuro/main-HE5HYT4F.js": "d555d0e7f92975339378e47c516ba42317966d3c",
-    "/educa-neuro/manifest.webmanifest": "0b29111918258f1b678677be8fc1f3d1740cf324",
-    "/educa-neuro/styles-A24PVHJV.css": "26bc8e28b2523d4185d150163c197fc01e415b74"
+    "/educa-neuro/index.html": "d311696f289780fa42ec49e03407238ac7a9a939",
+    "/educa-neuro/main-WXOS7FJ2.js": "6d3b3f10db809b077ac9a5ec196b1f7a352cdfae",
+    "/educa-neuro/manifest.webmanifest": "9bff94e5b5069ca982e77c63efb34c6a2c14e161",
+    "/educa-neuro/styles-ZDLIMSRY.css": "2eb72ae6c4c9ec77790668e5b7121c340610ff5f"
   },
   "navigationUrls": [
     {

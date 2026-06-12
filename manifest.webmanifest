@@ -1,7 +1,10 @@
 {
-  "name": "educa-neuro",
-  "short_name": "educa-neuro",
+  "name": "EducaNeuro - Formación en Neurodiversidad",
+  "short_name": "EducaNeuro",
+  "description": "Formación y recursos para comprender, acompañar e incluir. Enfoque neuroafirmativo.",
   "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a3a5c",
   "scope": "./",
   "start_url": "./",
   "icons": [
