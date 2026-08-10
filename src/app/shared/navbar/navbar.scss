@@ -79,6 +79,7 @@
       &.icon-teal   { color: var(--color-accent-teal); }
       &.icon-purple { color: var(--color-accent-purple); }
       &.icon-primary { color: var(--color-primary); }
+      &.icon-pink   { color: #e91e8c; }
     }
 
     &:hover {
@@ -93,6 +94,7 @@
         &.icon-teal   { background: #e0f7fa; box-shadow: 0 4px 10px rgba(0,131,143,0.25); }
         &.icon-purple { background: #f3e5f5; box-shadow: 0 4px 10px rgba(123,31,162,0.25); }
         &.icon-primary { background: #e8edf5; box-shadow: 0 4px 10px rgba(26,58,92,0.25); }
+        &.icon-pink   { background: #fce4ec; box-shadow: 0 4px 10px rgba(233,30,140,0.25); }
       }
     }
 
@@ -243,6 +245,7 @@
         &.icon-teal   { background: #e0f7fa; color: var(--color-accent-teal); }
         &.icon-purple { background: #f3e5f5; color: var(--color-accent-purple); }
         &.icon-primary { background: #e8edf5; color: var(--color-primary); }
+        &.icon-pink   { background: #fce4ec; color: #e91e8c; }
       }
 
       &:hover {
@@ -256,6 +259,7 @@
           &.icon-teal   { background: var(--color-accent-teal); color: #fff; box-shadow: 0 4px 12px rgba(0,131,143,0.4); }
           &.icon-purple { background: var(--color-accent-purple); color: #fff; box-shadow: 0 4px 12px rgba(123,31,162,0.4); }
           &.icon-primary { background: var(--color-primary); color: #fff; box-shadow: 0 4px 12px rgba(26,58,92,0.4); }
+          &.icon-pink   { background: #e91e8c; color: #fff; box-shadow: 0 4px 12px rgba(233,30,140,0.4); }
         }
       }
 

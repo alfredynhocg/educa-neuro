@@ -33,10 +33,10 @@ export class Home implements OnInit, AfterViewInit, OnDestroy {
   ctaVisible         = signal(false);
   testimoniosVisible = signal(false);
   cursosDestVisible  = signal(false);
+  serviciosVisible   = signal(false);
   sobreVisible       = signal(false);
   leadmagnetVisible  = signal(false);
   webinarsVisible    = signal(false);
-  mediosVisible      = signal(false);
   readonly heroSlides: HeroSlide[] = [
     { id: 'inicio',   label: 'Inicio' },
     { id: 'cursos',   label: 'Cursos' },
@@ -110,10 +110,10 @@ export class Home implements OnInit, AfterViewInit, OnDestroy {
     watch('.cta-inner',          () => this.ctaVisible.set(true));
     watch('.testimonios-grid',   () => this.testimoniosVisible.set(true));
     watch('.cursos-dest-grid',   () => this.cursosDestVisible.set(true));
+    watch('.servicios-home-grid', () => this.serviciosVisible.set(true));
     watch('.sobre-grid',         () => this.sobreVisible.set(true));
     watch('.leadmagnet-inner',   () => this.leadmagnetVisible.set(true));
     watch('.webinars-prox-list', () => this.webinarsVisible.set(true));
-    watch('.medios-grid',        () => this.mediosVisible.set(true));
   }
 
   ngOnDestroy() {

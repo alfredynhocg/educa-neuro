@@ -7,6 +7,8 @@ import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
 import { routes } from './app.routes';
 import { provideServiceWorker } from '@angular/service-worker';
 
+const base = document.baseURI.endsWith('/') ? document.baseURI : document.baseURI + '/';
+
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
@@ -14,7 +16,7 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(),
     provideTranslateService({
       lang: 'es',
-      loader: provideTranslateHttpLoader({ prefix: '/i18n/', suffix: '.json' }),
+      loader: provideTranslateHttpLoader({ prefix: `${base}i18n/`, suffix: '.json' }),
     }),
     provideServiceWorker('ngsw-worker.js', {
       enabled: !isDevMode(),

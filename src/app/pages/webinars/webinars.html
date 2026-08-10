@@ -26,7 +26,7 @@
         </li>
       </ul>
       <div class="hero-btns">
-        <a routerLink="/webinars" class="btn btn-primary">
+        <a href="#proximos-webinars" class="btn btn-primary">
           {{ 'webinars.btn_see' | translate }}
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
@@ -85,7 +85,7 @@
 </section>
 
 <!-- ===== BODY ===== -->
-<section class="webinars-body">
+<section class="webinars-body" id="proximos-webinars">
   <div class="container body-layout">
 
     <div class="que-col">
@@ -132,8 +132,8 @@
 
         <div class="webinar-item">
           <div class="w-date green-date">
-            <span class="w-month">JUL</span>
-            <span class="w-day">18</span>
+            <span class="w-month">AGO</span>
+            <span class="w-day">22</span>
           </div>
           <div class="w-info">
             <span class="w-tag live-tag">{{ 'webinars.live' | translate }}</span>
@@ -143,13 +143,18 @@
               {{ 'webinars.w1_time' | translate }}
             </p>
           </div>
-          <a routerLink="/webinars" class="btn-inscribir green-inscribir">{{ 'webinars.register' | translate }}</a>
+          <a
+            href="https://wa.me/59173029878?text=Hola%2C%20quisiera%20inscribirme%20al%20webinar%3A%20Meltdowns%20y%20shutdowns%3A%20c%C3%B3mo%20responder%20con%20calma"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-inscribir green-inscribir"
+          >{{ 'webinars.register' | translate }}</a>
         </div>
 
         <div class="webinar-item">
           <div class="w-date blue-date">
-            <span class="w-month">AGO</span>
-            <span class="w-day">07</span>
+            <span class="w-month">SEP</span>
+            <span class="w-day">05</span>
           </div>
           <div class="w-info">
             <span class="w-tag live-tag">{{ 'webinars.live' | translate }}</span>
@@ -159,13 +164,18 @@
               {{ 'webinars.w2_time' | translate }}
             </p>
           </div>
-          <a routerLink="/webinars" class="btn-inscribir blue-inscribir">{{ 'webinars.register' | translate }}</a>
+          <a
+            href="https://wa.me/59173029878?text=Hola%2C%20quisiera%20inscribirme%20al%20webinar%3A%20TDAH%20y%20funciones%20ejecutivas%3A%20estrategias%20para%20el%20hogar"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-inscribir blue-inscribir"
+          >{{ 'webinars.register' | translate }}</a>
         </div>
 
         <div class="webinar-item">
           <div class="w-date orange-date">
-            <span class="w-month">AGO</span>
-            <span class="w-day">22</span>
+            <span class="w-month">SEP</span>
+            <span class="w-day">19</span>
           </div>
           <div class="w-info">
             <span class="w-tag live-tag">{{ 'webinars.live' | translate }}</span>
@@ -175,11 +185,21 @@
               {{ 'webinars.w3_time' | translate }}
             </p>
           </div>
-          <a routerLink="/webinars" class="btn-inscribir orange-inscribir">{{ 'webinars.register' | translate }}</a>
+          <a
+            href="https://wa.me/59173029878?text=Hola%2C%20quisiera%20inscribirme%20al%20webinar%3A%20S%C3%ADndrome%20de%20Down%3A%20potenciando%20capacidades%20desde%20temprana%20edad"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-inscribir orange-inscribir"
+          >{{ 'webinars.register' | translate }}</a>
         </div>
 
       </div>
-      <a routerLink="/webinars" class="ver-calendario">{{ 'webinars.see_calendar' | translate }}</a>
+      <a
+        href="https://wa.me/59173029878?text=Hola%2C%20quisiera%20conocer%20el%20calendario%20completo%20de%20webinars"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="ver-calendario"
+      >{{ 'webinars.see_calendar' | translate }}</a>
 
       <div class="proximos-stats">
         <div class="ps-item">
@@ -206,7 +226,12 @@
     <div class="cta-text">
       <p>{{ 'webinars.cta_text' | translate }} <span class="text-green">{{ 'webinars.cta_hl' | translate }}</span> {{ 'webinars.cta_text2' | translate }}</p>
     </div>
-    <a routerLink="/webinars" class="btn btn-primary cta-btn">
+    <a
+      href="https://wa.me/59173029878?text=Hola%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20pr%C3%B3ximos%20webinars"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn-primary cta-btn"
+    >
       {{ 'webinars.cta_btn' | translate }}
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </a>

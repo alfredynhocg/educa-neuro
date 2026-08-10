@@ -5,7 +5,7 @@
     <!-- COLUMNA IZQUIERDA: foto + cita -->
     <div class="foto-col" [class.animate]="heroVisible()">
       <div class="foto-wrap">
-        <img src="assets/images/anne.jpg" alt="Especialista EducaNeuro" class="foto-real" />
+        <img src="assets/images/anne-perfil.jpg" alt="Especialista EducaNeuro" class="foto-real" />
         <div class="foto-chip chip-heart">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="#1565c0"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
         </div>
@@ -79,11 +79,18 @@
           <p>{{ 'sobre.pi3d' | translate }}</p>
         </div>
         <div class="pilar">
-          <div class="pilar-icon purple-ic">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7b1fa2" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          <div class="pilar-icon teal-ic">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00838f" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
           </div>
           <strong>{{ 'sobre.pi4' | translate }}</strong>
           <p>{{ 'sobre.pi4d' | translate }}</p>
+        </div>
+        <div class="pilar">
+          <div class="pilar-icon purple-ic">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7b1fa2" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <strong>{{ 'sobre.pi5' | translate }}</strong>
+          <p>{{ 'sobre.pi5d' | translate }}</p>
         </div>
       </div>
     </div>
@@ -117,6 +124,14 @@
             <span class="chk"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
             {{ 'sobre.t5' | translate }}
           </li>
+          <li>
+            <span class="chk"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            {{ 'sobre.t6' | translate }}
+          </li>
+          <li>
+            <span class="chk"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            {{ 'sobre.t7' | translate }}
+          </li>
         </ul>
         <a routerLink="/webinars" class="btn btn-outline taller-cta-btn">
           {{ 'sobre.talleres_btn' | translate }}
@@ -125,6 +140,53 @@
       </div>
     </div>
 
+  </div>
+</section>
+
+<!-- ===== A QUIÉN / CÓMO / QUÉ ME MUEVE ===== -->
+<section class="acompano-section">
+  <div class="container">
+    <div class="acompano-grid" [class.animate]="acompanoVisible()">
+      <div class="acompano-card card-blue">
+        <div class="acompano-header">
+          <div class="acompano-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h4 class="text-primary">{{ 'sobre.quienes_title' | translate }}</h4>
+        </div>
+        <ul class="check-list">
+          <li><span class="chk chk-blue"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>{{ 'sobre.quienes1' | translate }}</li>
+          <li><span class="chk chk-blue"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>{{ 'sobre.quienes2' | translate }}</li>
+          <li><span class="chk chk-blue"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>{{ 'sobre.quienes3' | translate }}</li>
+        </ul>
+      </div>
+
+      <div class="acompano-card card-green">
+        <div class="acompano-header">
+          <div class="acompano-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="1.8"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+          <h4 class="text-green">{{ 'sobre.como_title' | translate }}</h4>
+        </div>
+        <ul class="check-list">
+          <li><span class="chk chk-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>{{ 'sobre.como1' | translate }}</li>
+          <li><span class="chk chk-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>{{ 'sobre.como2' | translate }}</li>
+          <li><span class="chk chk-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>{{ 'sobre.como3' | translate }}</li>
+          <li><span class="chk chk-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>{{ 'sobre.como4' | translate }}</li>
+        </ul>
+      </div>
+
+      <div class="acompano-card card-purple">
+        <div class="acompano-header">
+          <div class="acompano-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#7b1fa2" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h4 class="text-purple">{{ 'sobre.mueve_title' | translate }}</h4>
+        </div>
+        <p>{{ 'sobre.mueve_text' | translate }}</p>
+        <p class="mueve-quote">"{{ 'sobre.mueve_quote' | translate }}"</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -189,7 +251,12 @@
     </div>
     <div class="cta-right">
       <p>{{ 'sobre.cta_right' | translate }}</p>
-      <a routerLink="/webinars" class="btn btn-white cta-contact-btn">
+      <a
+        href="https://wa.me/59173029878?text=Hola%2C%20quisiera%20conocer%20m%C3%A1s%20sobre%20tu%20trabajo%20o%20llevar%20un%20taller%20a%20mi%20instituci%C3%B3n"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-white cta-contact-btn"
+      >
         {{ 'sobre.cta_btn' | translate }}
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>

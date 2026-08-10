@@ -2,24 +2,24 @@ import { Component, AfterViewInit, OnDestroy, ElementRef, inject, signal, PLATFO
 import { isPlatformBrowser } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
+import { SERVICIOS } from '../servicios.data';
 
 @Component({
-  selector: 'app-sobre-mi',
+  selector: 'app-servicios-list',
   imports: [RouterLink, TranslatePipe],
-  templateUrl: './sobre-mi.html',
-  styleUrl: './sobre-mi.scss',
+  templateUrl: './servicios-list.html',
+  styleUrl: './servicios-list.scss',
 })
-export class SobreMi implements AfterViewInit, OnDestroy {
+export class ServiciosList implements AfterViewInit, OnDestroy {
   private el       = inject(ElementRef);
   private platform = inject(PLATFORM_ID);
 
-  heroVisible     = signal(false);
-  perfilVisible   = signal(false);
-  pilaresVisible  = signal(false);
-  acompanoVisible = signal(false);
-  talleresVisible = signal(false);
-  valoresVisible  = signal(false);
-  ctaVisible      = signal(false);
+  readonly servicios = SERVICIOS;
+
+  heroVisible       = signal(false);
+  gridVisible       = signal(false);
+  conditionsVisible = signal(false);
+  ctaVisible        = signal(false);
 
   private observers: IntersectionObserver[] = [];
 
@@ -31,19 +31,16 @@ export class SobreMi implements AfterViewInit, OnDestroy {
       if (!el) return;
       const obs = new IntersectionObserver(
         ([entry]) => { if (entry.isIntersecting) { setter(); obs.disconnect(); } },
-        { threshold: 0.1 }
+        { threshold: 0.12 }
       );
       obs.observe(el);
       this.observers.push(obs);
     };
 
-    watch('.foto-col',      () => this.heroVisible.set(true));
-    watch('.perfil-col',    () => this.perfilVisible.set(true));
-    watch('.pilares-grid',  () => this.pilaresVisible.set(true));
-    watch('.acompano-grid', () => this.acompanoVisible.set(true));
-    watch('.talleres-col',  () => this.talleresVisible.set(true));
-    watch('.valores-grid',  () => this.valoresVisible.set(true));
-    watch('.cta-sobre .cta-inner', () => this.ctaVisible.set(true));
+    this.heroVisible.set(true);
+    watch('.servicios-grid',     () => this.gridVisible.set(true));
+    watch('.conditions-section', () => this.conditionsVisible.set(true));
+    watch('.cta-servicios .cta-inner', () => this.ctaVisible.set(true));
   }
 
   ngOnDestroy() {

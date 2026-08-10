@@ -332,6 +332,7 @@
 </section>
 
 <!-- ===== CURSOS DESTACADOS ===== -->
+@if (false) {
 <section class="cursos-dest-section">
   <div class="container">
     <div class="section-header-row">
@@ -366,8 +367,13 @@
           </div>
         </div>
         <div class="curso-dest-footer">
-          <span class="curso-precio">S/ 120.00</span>
-          <a routerLink="/cursos" class="btn btn-primary btn-sm">{{ 'home.courses.see_course' | translate }}</a>
+          <span class="curso-precio">Bs 120.00</span>
+          <a
+            href="https://wa.me/59173029878?text=Hola%2C%20quisiera%20inscribirme%20al%20curso%3A%20Autismo%3A%20Fundamentos%20para%20Familias%20y%20Educadores"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary btn-sm"
+          >{{ 'home.courses.see_course' | translate }}</a>
         </div>
       </div>
 
@@ -391,8 +397,13 @@
           </div>
         </div>
         <div class="curso-dest-footer">
-          <span class="curso-precio">S/ 95.00</span>
-          <a routerLink="/cursos" class="btn btn-primary btn-sm">{{ 'home.courses.see_course' | translate }}</a>
+          <span class="curso-precio">Bs 95.00</span>
+          <a
+            href="https://wa.me/59173029878?text=Hola%2C%20quisiera%20inscribirme%20al%20curso%3A%20TDAH%20en%20el%20Aula%3A%20Estrategias%20Pr%C3%A1cticas%20para%20Docentes"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary btn-sm"
+          >{{ 'home.courses.see_course' | translate }}</a>
         </div>
       </div>
 
@@ -416,21 +427,27 @@
           </div>
         </div>
         <div class="curso-dest-footer">
-          <span class="curso-precio">S/ 85.00</span>
-          <a routerLink="/cursos" class="btn btn-primary btn-sm">{{ 'home.courses.see_course' | translate }}</a>
+          <span class="curso-precio">Bs 85.00</span>
+          <a
+            href="https://wa.me/59173029878?text=Hola%2C%20quisiera%20inscribirme%20al%20curso%3A%20Acompa%C3%B1amiento%20Emocional%20en%20Familias%20de%20Ni%C3%B1os%20Neurodivergentes"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary btn-sm"
+          >{{ 'home.courses.see_course' | translate }}</a>
         </div>
       </div>
 
     </div>
   </div>
 </section>
+}
 
 <!-- ===== SOBRE LA ESPECIALISTA ===== -->
 <section class="sobre-section">
   <div class="container sobre-grid" [class.animate]="sobreVisible()">
     <div class="sobre-img-col">
       <div class="sobre-img-wrap">
-        <img src="assets/images/anne.jpg" alt="Especialista EducaNeuro" class="sobre-foto-real" width="280" height="300" />
+        <img src="assets/images/anne-perfil.jpg" alt="Especialista EducaNeuro" class="sobre-foto-real" width="280" height="280" />
         <div class="sobre-chip sobre-chip-heart">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="#1565c0"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
         </div>
@@ -481,6 +498,57 @@
   </div>
 </section>
 
+<!-- ===== SERVICIOS ===== -->
+<section class="servicios-home-section">
+  <div class="container">
+    <div class="section-header-row">
+      <div>
+        <span class="hs-badge badge-blue" style="margin-bottom: 0.5rem;">{{ 'servicios.badge' | translate }}</span>
+        <h2>{{ 'home.services.title' | translate }}</h2>
+      </div>
+      <a routerLink="/servicios" class="btn btn-green-outline ver-todos-btn">
+        {{ 'home.services.see_all' | translate }}
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="servicios-home-grid" [class.animate]="serviciosVisible()">
+
+      <a routerLink="/servicios/acompanamiento-psicopedagogico" class="servicio-home-card">
+        <div class="servicio-home-icon blue-bg">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="1.6"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3.333 2 8.667 2 12 0v-5"/></svg>
+        </div>
+        <h4>{{ 'servicios.s1.title' | translate }}</h4>
+        <p>{{ 'servicios.s1.desc' | translate }}</p>
+      </a>
+
+      <a routerLink="/servicios/acompanamiento-familias" class="servicio-home-card">
+        <div class="servicio-home-icon green-bg">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="1.6"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h4>{{ 'servicios.s2.title' | translate }}</h4>
+        <p>{{ 'servicios.s2.desc' | translate }}</p>
+      </a>
+
+      <a routerLink="/servicios/educacion-en-casa" class="servicio-home-card">
+        <div class="servicio-home-icon orange-bg">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f57c00" stroke-width="1.6"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg>
+        </div>
+        <h4>{{ 'servicios.s3.title' | translate }}</h4>
+        <p>{{ 'servicios.s3.desc' | translate }}</p>
+      </a>
+
+      <a routerLink="/servicios/formacion-docentes-familias" class="servicio-home-card">
+        <div class="servicio-home-icon purple-bg">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7b1fa2" stroke-width="1.6"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8 21 12 17 16 21"/></svg>
+        </div>
+        <h4>{{ 'servicios.s4.title' | translate }}</h4>
+        <p>{{ 'servicios.s4.desc' | translate }}</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
 <!-- ===== LEAD MAGNET ===== -->
 <section class="leadmagnet-section">
   <div class="container leadmagnet-inner" [class.animate]="leadmagnetVisible()">
@@ -494,7 +562,12 @@
       <h3>{{ 'home.leadmagnet.title' | translate }}</h3>
       <p>{{ 'home.leadmagnet.desc' | translate }}</p>
     </div>
-    <a routerLink="/recursos" class="btn btn-white leadmagnet-btn">
+    <a
+      href="https://wa.me/59173029878?text=Hola%2C%20quisiera%20recibir%20la%20gu%C3%ADa%20gratuita%3A%2010%20estrategias%20para%20acompa%C3%B1ar%20a%20tu%20hijo%20con%20autismo%20en%20casa"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn-white leadmagnet-btn"
+    >
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       {{ 'home.leadmagnet.btn' | translate }}
     </a>
@@ -502,6 +575,7 @@
 </section>
 
 <!-- ===== PRÓXIMOS WEBINARS ===== -->
+@if (false) {
 <section class="webinars-prox-section">
   <div class="container">
     <div class="section-header-row">
@@ -519,8 +593,8 @@
       <div class="webinar-prox-card">
         <div class="webinar-fecha-col">
           <div class="webinar-fecha-box teal">
-            <span class="wf-dia">18</span>
-            <span class="wf-mes">Jul</span>
+            <span class="wf-dia">22</span>
+            <span class="wf-mes">Ago</span>
           </div>
         </div>
         <div class="webinar-info">
@@ -537,8 +611,8 @@
       <div class="webinar-prox-card">
         <div class="webinar-fecha-col">
           <div class="webinar-fecha-box blue">
-            <span class="wf-dia">07</span>
-            <span class="wf-mes">Ago</span>
+            <span class="wf-dia">05</span>
+            <span class="wf-mes">Sep</span>
           </div>
         </div>
         <div class="webinar-info">
@@ -555,8 +629,8 @@
       <div class="webinar-prox-card">
         <div class="webinar-fecha-col">
           <div class="webinar-fecha-box orange">
-            <span class="wf-dia">22</span>
-            <span class="wf-mes">Ago</span>
+            <span class="wf-dia">19</span>
+            <span class="wf-mes">Sep</span>
           </div>
         </div>
         <div class="webinar-info">
@@ -573,35 +647,7 @@
     </div>
   </div>
 </section>
-
-<!-- ===== MEDIOS / INSTITUCIONES ===== -->
-<section class="medios-section">
-  <div class="container">
-    <p class="medios-label">{{ 'home.medios_label' | translate }}</p>
-    <div class="medios-grid" [class.animate]="mediosVisible()">
-      <div class="medio-pill">
-        <span class="medio-dot dot-blue"></span>
-        Congreso Latinoam. de Educación Inclusiva
-      </div>
-      <div class="medio-pill">
-        <span class="medio-dot dot-green"></span>
-        Red Iberoamericana de Neurodiversidad
-      </div>
-      <div class="medio-pill">
-        <span class="medio-dot dot-orange"></span>
-        Asociación Peruana de Autismo
-      </div>
-      <div class="medio-pill">
-        <span class="medio-dot dot-teal"></span>
-        Foro Internacional TEA y Educación
-      </div>
-      <div class="medio-pill">
-        <span class="medio-dot dot-purple"></span>
-        Comunidad Docente Inclusiva Latinoamérica
-      </div>
-    </div>
-  </div>
-</section>
+}
 
 <section class="valores-section">
   <div class="container valores-grid" [class.animate]="valoresVisible()">
