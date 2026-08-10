@@ -1,7 +1,10 @@
-import { Component, signal, OnInit, OnDestroy, inject } from '@angular/core';
+import { Component, signal, OnInit, OnDestroy, inject, isDevMode, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { RouterOutlet, Router, NavigationStart, NavigationEnd, NavigationCancel, NavigationError, ActivatedRouteSnapshot } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
+import { SwUpdate, VersionReadyEvent } from '@angular/service-worker';
 import { Subscription } from 'rxjs';
+import { filter } from 'rxjs/operators';
 import { Navbar } from './shared/navbar/navbar';
 import { Footer } from './shared/footer/footer';
 
@@ -347,7 +350,10 @@ export class App implements OnInit, OnDestroy {
   private router = inject(Router);
   private titleService = inject(Title);
   private metaService = inject(Meta);
+  private swUpdate = inject(SwUpdate);
+  private platform = inject(PLATFORM_ID);
   private sub!: Subscription;
+  private swSub?: Subscription;
   private navTimer: ReturnType<typeof setTimeout> | null = null;
 
   readonly particles = Array.from({ length: 18 }, () => {
@@ -369,6 +375,8 @@ export class App implements OnInit, OnDestroy {
     setTimeout(() => this.loading.set(false), 2700);
     setTimeout(() => this.waVisible.set(true), 3200);
 
+    this.initSwUpdates();
+
     this.sub = this.router.events.subscribe(event => {
       if (event instanceof NavigationStart) {
         this.navLoading.set(true);
@@ -382,6 +390,20 @@ export class App implements OnInit, OnDestroy {
         if (event instanceof NavigationEnd) this.updateMetaTags(event.urlAfterRedirects);
       }
     });
+  }
+
+  private initSwUpdates() {
+    if (!isPlatformBrowser(this.platform) || isDevMode() || !this.swUpdate.isEnabled) return;
+
+    this.swSub = this.swUpdate.versionUpdates
+      .pipe(filter((e): e is VersionReadyEvent => e.type === 'VERSION_READY'))
+      .subscribe(() => {
+        this.swUpdate.activateUpdate().then(() => location.reload());
+      });
+
+    // Comprueba si hay una versión nueva apenas arranca la app, además
+    // de las comprobaciones periódicas que hace el propio Service Worker.
+    this.swUpdate.checkForUpdate();
   }
 
   private updateMetaTags(url: string) {
@@ -402,6 +424,7 @@ export class App implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.sub?.unsubscribe();
+    this.swSub?.unsubscribe();
     if (this.navTimer) clearTimeout(this.navTimer);
   }
 }
